@@ -38,7 +38,7 @@ def create_clustering(df):
     df['cluster'] = df['cnt'].apply(lambda x: 'high' if x > 6000 else('moderate' if x > 3000 else ' low'))
     return df
 
-all_df = pd.read_csv('./df_clean.csv')
+all_df = pd.read_csv('df_clean.csv')
 all_df['dteday'] = pd.to_datetime(all_df['dteday'])
 min_date = all_df['dteday'].min()
 max_date = all_df['dteday'].max()
