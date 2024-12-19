@@ -45,7 +45,7 @@ max_date = all_df['dteday'].max()
 
 with st.sidebar:
     # MENAMBAHKAN LOGO
-    st.image('https://drive.google.com/uc?id=11KS7aZswd5MnyL1fnk_trJ71tyPa1rrc')
+    # st.image('./logo.png')
     # MENGAMBIL START DATE DAN END DATE INPUT
     start_date, end_date = st.date_input(
         label='Range Date',
